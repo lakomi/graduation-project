@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.graduation.dao.PlateMapper">
+
+
+<!--    Plate getPlateById(@Param("plateId") String plateId);-->
+    <select id="getPlateById" resultType="com.edu.graduation.entity.bean.Plate">
+        select
+        plate_id plateId,
+        price,
+        picture,
+        used_count usedCount,
+        remark,
+        store_id storeId
+        from plate
+        where
+        plate_id = #{plateId};
+    </select>
+
+<!--    int modifyPlateUsedCount(@Param("plateId")String plateId,@Param("usedCount")Integer usedCount);-->
+    <update id="modifyPlateUsedCount">
+        update plate set  used_count=#{usedCount}  where plate_id=#{plateId};
+    </update>
+
+<!--        int getUsedCountById(@Param("plateId")String plateId);-->
+    <select id="getUsedCountById" resultType="java.lang.Integer">
+        select used_count from plate where plate_id=#{plateId};
+    </select>
+
+<!--        Double getPriceById(@Param("plateId")String plateId);-->
+    <select id="getPriceById" resultType="java.lang.Double">
+        select price from plate where plate_id=#{plateId};
+    </select>
+
+</mapper>

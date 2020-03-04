@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.graduation.dao.BusinessUserMapper">
+
+<!--    BusinessUser getUserById(@Param("userId") String userId);-->
+    <select id="getUserById" resultType="com.edu.graduation.entity.bean.BusinessUser">
+        select
+        user_id userId,
+        password,
+        user_role userRole
+        from
+        business_user
+        where
+        user_id = #{userId}
+    </select>
+
+<!--    int addUser(BusinessUser businessUser);-->
+    <insert id="addUser" parameterType="com.edu.graduation.entity.bean.BusinessUser">
+        insert into business_user (user_id, password, user_role) values (#{userId},#{password},#{userRole});
+    </insert>
+
+<!--    int updatePw(@Param("userId") String userId, @Param("password") String password);-->
+    <update id="updatePw" parameterType="java.lang.String">
+        update business_user set password = #{password} where user_id=#{userId}
+    </update>
+
+<!--    int updateRole(@Param("userId") String userId, @Param("userRole") String userRole);-->
+    <update id="updateRole" parameterType="java.lang.String">
+        update business_user set user_role = #{userRole} where user_id=#{userId}
+    </update>
+
+
+</mapper>

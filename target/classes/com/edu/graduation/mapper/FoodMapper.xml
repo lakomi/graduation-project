@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.graduation.dao.FoodMapper">
+
+<!--    List<Food> getAllFoodFromOne(@Param("storeId")Integer storeId);-->
+    <select id="getAllFoodFromOne" resultType="com.edu.graduation.entity.bean.Food">
+        select
+        food_id foodId,
+        food_name foodName,
+        food_price foodPrice,
+        plate_id plateId,
+        store_id storeId
+        from
+        food
+        where
+        store_id=#{storeId}
+    </select>
+
+<!--     List<FoodManageVo> getAllFood(@Param("storeId")Integer storeId);-->
+    <select id="getAllFood" resultType="com.edu.graduation.vo.FoodManageVo">
+        select
+        f.food_id foodId,
+        f.food_name foodName,
+        f.food_price foodPrice,
+        p.picture platePhoto
+        from
+        food f join plate p
+        on (f.plate_id=p.plate_id)
+        where
+        f.store_id=#{storeId}
+    </select>
+
+<!--    Food getOneById(@Param("foodId")String foodId);-->
+    <select id="getOneById" resultType="com.edu.graduation.entity.bean.Food">
+        select
+        food_id foodId,
+        food_name foodName,
+        food_price foodPrice,
+        store_id storeId,
+        plate_id plateId
+        from
+        food
+        where
+        food_id = #{foodId}
+    </select>
+
+
+<!--    int addFood(Food food);-->
+    <insert id="addFood" parameterType="com.edu.graduation.entity.bean.Food">
+        insert into food (food_id, food_name, food_price, store_id, plate_id)
+        values (#{foodId},#{foodName},#{foodPrice},#{storeId},#{plateId});
+    </insert>
+
+<!--    int updateFood(Food food);-->
+    <update id="updateFood" parameterType="com.edu.graduation.entity.bean.Food">
+        update
+        food
+        set
+        food_name=#{foodName},
+        food_price=#{foodPrice},
+        store_id=#{storeId},
+        plate_id=#{plateId}
+        where
+        food_id=#{foodId};
+    </update>
+
+<!--   int deleteFood(@Param("foodId")String foodId);-->
+    <delete id="deleteFood" parameterType="java.lang.String">
+        delete from food where food_id=#{foodId}
+    </delete>
+
+
+</mapper>
