@@ -14,8 +14,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Mapper
 public interface OrderMapper{
-
-
     /**
      * 删除某菜品的订单信息
      * @param foodId
