@@ -24,6 +24,8 @@ public enum MyExceptionEnum {
      * 密码错误
      */
     PASSWORD_ERROR(9, "密码错误"),
+
+    OLD_PASSWORD_ERROR(10, "原密码错误"),
     /**
      * 服务器内部错误，数据库操作出错
      */

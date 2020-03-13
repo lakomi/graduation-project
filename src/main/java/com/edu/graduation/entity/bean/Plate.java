@@ -18,7 +18,7 @@ public class Plate {
 
     
     @Id
-    private String plateId;
+    private String plateId;//4位
 
     private Double price;
     

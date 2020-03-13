@@ -20,7 +20,7 @@ public class Sell {
 
     
     @Id
-    private String sellId;
+    private String sellId;//自动生成  6位
 
     
     private String foodId;

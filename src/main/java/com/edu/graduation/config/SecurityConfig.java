@@ -51,7 +51,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         log.info("进入SecurityConfig的configure(HttpSecurity http)");
         http.csrf().disable()           //关闭csrf
                 .authorizeRequests()      //授权配置
+                .antMatchers("/loginA","/loginU").permitAll()
                 .antMatchers("/*/*").permitAll()
+                .antMatchers("/swagger-ui.html").permitAll()
+                .antMatchers("/swagger-resources/**").permitAll()
+                .antMatchers("/images/**").permitAll()
+                .antMatchers("/webjars/**").permitAll()
+                .antMatchers("/v2/api-docs").permitAll()
+                .antMatchers("/configuration/ui").permitAll()
+                .antMatchers("/configuration/security").permitAll()
 //                .antMatchers("/admin/*").hasRole("A")
                 .anyRequest()          //任何请求
                 .authenticated()      //身份认证

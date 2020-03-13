@@ -20,7 +20,7 @@ public class Orderdetail {
 
     
     @Id
-    private String detailId;
+    private String detailId;//10位
 
     
     private Integer storeId;

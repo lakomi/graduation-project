@@ -18,7 +18,7 @@ public class Food {
 
     
     @Id
-    private String foodId;
+    private String foodId;//5位
 
     
     private String foodName;

@@ -18,9 +18,12 @@ public class Store {
 
     
     @Id
-    private Integer storeId;
+    private Integer storeId;//i,2,3...
 
-    
+
+    private String userId;//将登陆的用户和商家联系起来
+
+
     private String storeName;
 
     

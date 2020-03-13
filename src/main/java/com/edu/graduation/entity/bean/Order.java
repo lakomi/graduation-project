@@ -20,7 +20,7 @@ public class Order {
 
     
     @Id
-    private String orderId;
+    private String orderId;//时间+随机数
 
     
     private Integer storeId;

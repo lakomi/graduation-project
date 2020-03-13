@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.edu.graduation.dao.StoreMapper">
-    <resultMap id="BaseResultMap" type="com.edu.graduation.entity.bean.Store">
-        
-        <id column="store_id" jdbcType="INTEGER" property="storeId"/>
-                
-        <id column="store_name" jdbcType="VARCHAR" property="storeName"/>
-        
-        <id column="store_address" jdbcType="VARCHAR" property="storeAddress"/>
-        
-        <id column="store_owner" jdbcType="VARCHAR" property="storeOwner"/>
-        
-    </resultMap>
+
+<!--    Store getOneByUserId(@Param("userId")String userId);-->
+    <select id="getOneByUserId" resultType="com.edu.graduation.entity.bean.Store">
+        select
+        store_id storeId,
+        store_name storeName,
+        store_address storeAddress,
+        user_id userId,
+        store_owner storeOwner
+        from
+        store
+        where user_id=#{userId}
+    </select>
+
+<!--    int updateAllData(ModifySelfDTO modifySelfDTO);-->
+    <update id="updateAllData" parameterType="com.edu.graduation.entity.dto.ModifySelfDTO">
+        update store
+        set
+        store_name = #{modifySelfDTO.storeName},
+        store_address = #{modifySelfDTO.storeAddress},
+        store_owner = #{modifySelfDTO.storeOwner}
+        where
+        store_id=#{modifySelfDTO.storeId};
+    </update>
+
 
 </mapper>
