@@ -6,6 +6,7 @@ import com.edu.graduation.enums.CodeEnum;
 import com.edu.graduation.service.UserService;
 import com.edu.graduation.utils.ResultVoUtil;
 import com.edu.graduation.vo.ResultVo;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
@@ -38,6 +39,7 @@ public class UserController {
      * @param response
      * @return
      */
+    @ApiOperation(value = "商家登录")
     @PostMapping("/loginA")
     public ResultVo AdminLogin(@Valid LoginDTO loginDTO, BindingResult bindingResult, HttpServletResponse response) {
 
@@ -57,14 +59,11 @@ public class UserController {
      * @param response
      * @return
      */
+    @ApiOperation(value = "目前暂定用户登录")
     @PostMapping("/loginU")
     public ResultVo UserLogin(@Valid LoginDTO loginDTO, BindingResult bindingResult, HttpServletResponse response) {
-//        response.setHeader("Access-Control-Allow-Origin", "*");
-//        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
-//        response.addHeader("Access-Control-Allow-Credentials", "true");
-//        response.addHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept,Authorization");
-//        response.addHeader("Access-Control-Expose-Headers", "Origin, X-Requested-With, Content-Type, Accept,Authorization");
-        if (bindingResult.hasErrors()) {
+
+       if (bindingResult.hasErrors()) {
             log.info("/login @Valid 注解 验证错误");
             System.out.println(bindingResult.getFieldError().getDefaultMessage());
             return ResultVoUtil.error(CodeEnum.ERROR.getCode(), bindingResult.getFieldError().getDefaultMessage());

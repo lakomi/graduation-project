@@ -32,7 +32,10 @@ public class Food {
     
     private String plateId;
 
-    @Override
+
+    private Integer foodStatus;//1为在架，2为下架
+
+   @Override
     public String toString() {
         return JSON.toJSONString(this);
     }

@@ -38,10 +38,13 @@ public class FoodServiceImpl implements FoodService {
     @Autowired
     private SellMapper sellMapper;
 
+    private static Integer FOOD_STATUS_ON = 1;
+    private static Integer FOOD_STATUS_OFF = 0;
+
 
     @Override
     public ResultVo getAllFoodList(Integer storeId) {
-        List<FoodManageVo> foodManageVoList = foodMapper.getAllFood(storeId);
+        List<FoodManageVo> foodManageVoList = foodMapper.getAllFood(storeId,FOOD_STATUS_ON);
         return ResultVoUtil.success(foodManageVoList);
     }
 
@@ -64,11 +67,11 @@ public class FoodServiceImpl implements FoodService {
                 Integer oldPlateCount = plateMapper.getUsedCountById(oldPlateId);
                 if((plateMapper.modifyPlateUsedCount(oldPlateId,oldPlateCount-1) == 1)&&
                         (plateMapper.modifyPlateUsedCount(modifyFoodDTO.getPlateId(),newPlate.getUsedCount()+1))==1)
-                    return ResultVoUtil.success(BackMessageEnum.MODIFY_SUCCESS);
+                    return ResultVoUtil.success(BackMessageEnum.MODIFY_SUCCESS.getMessage());
                 else
                     throw new MyException(MyExceptionEnum.SQL_ERROR);
             }else
-                return ResultVoUtil.success(BackMessageEnum.MODIFY_SUCCESS);
+                return ResultVoUtil.success(BackMessageEnum.MODIFY_SUCCESS.getMessage());
         else
             throw new MyException(MyExceptionEnum.SQL_ERROR);
     }
@@ -81,13 +84,14 @@ public class FoodServiceImpl implements FoodService {
         Double price = plateMapper.getPriceById(addFoodDTO.getPlateId());
         food.setFoodPrice(price);
         food.setFoodId(KeyUtil.getRandomString(FOOD_ID_LENGTH));
+        food.setFoodStatus(FOOD_STATUS_ON);
         //添加
         int one = foodMapper.addFood(food);
         //修改盘子的被引用数量
         Integer cout = plateMapper.getUsedCountById(addFoodDTO.getPlateId());
         int two = plateMapper.modifyPlateUsedCount(addFoodDTO.getPlateId(),cout+1);
         if ((one==1)&&(two==1)){
-                return ResultVoUtil.success(BackMessageEnum.ADD_SUCCESS);
+                return ResultVoUtil.success(BackMessageEnum.ADD_SUCCESS.getMessage());
         }else
             throw new MyException(MyExceptionEnum.SQL_ERROR);
     }
@@ -99,19 +103,11 @@ public class FoodServiceImpl implements FoodService {
         Food food = foodMapper.getOneById(foodId);
         Integer count = plateMapper.getUsedCountById(food.getPlateId());
         int one = plateMapper.modifyPlateUsedCount(food.getPlateId(),count-1);
-        //删除菜品
-        int two = foodMapper.deleteFood(foodId);
-
-        //todo 菜品销售，订单，订单详情中分别删除
-        //菜品销售中删除
-        sellMapper.deleteByFoodId(foodId);
-
-
-
-
+        //删除菜品,仅仅将其设为下架
+        int two = foodMapper.deleteFood(foodId,FOOD_STATUS_OFF);
 
         if((one==1)&&(two==1)) {
-                return ResultVoUtil.success(BackMessageEnum.DEL_SUCCESS);
+                return ResultVoUtil.success(BackMessageEnum.DEL_SUCCESS.getMessage());
         }else
             throw new MyException(MyExceptionEnum.SQL_ERROR);
     }

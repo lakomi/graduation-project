@@ -13,4 +13,6 @@ public class FoodManageVo {
 
     private String platePhoto;
 
+    private String remark;
+
 }

@@ -29,7 +29,7 @@ public interface BusinessUserMapper {
      * @param businessUser
      * @return
      */
-    int addUser(BusinessUser businessUser);
+    int addUser(@Param("businessUser") BusinessUser businessUser);
 
     /**
      * 修改密码

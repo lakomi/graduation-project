@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
 * (Plate)表Mapper类
 *
@@ -15,6 +17,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Mapper
 public interface PlateMapper{
+
+    List<Plate> getPlateListByStoreId(@Param("storeId")Integer storeId);
+
 
     Plate getPlateById(@Param("plateId") String plateId);
 

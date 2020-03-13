@@ -25,7 +25,7 @@ public interface FoodMapper {
      */
     List<Food> getAllFoodFromOne(@Param("storeId")Integer storeId);
 
-    List<FoodManageVo> getAllFood(@Param("storeId")Integer storeId);
+    List<FoodManageVo> getAllFood(@Param("storeId")Integer storeId,@Param("status")Integer status);
 
     Food getOneById(@Param("foodId")String foodId);
 
@@ -34,21 +34,21 @@ public interface FoodMapper {
      * @param food
      * @return
      */
-    int addFood(Food food);
+    int addFood(@Param("food") Food food);
 
     /**
      * 修改菜品信息
      * @param food
      * @return
      */
-    int updateFood(Food food);
+    int updateFood(@Param("food") Food food);
 
     /**
      * 删除菜品
      * @param foodId
      * @return
      */
-    int deleteFood(@Param("foodId")String foodId);
+    int deleteFood(@Param("foodId")String foodId, @Param("status")Integer status);
 
 
 }
