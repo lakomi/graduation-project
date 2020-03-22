@@ -5,7 +5,6 @@ import lombok.Data;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Date;
 
 /**
  * (Sell)表实体类
@@ -35,7 +34,7 @@ public class Sell {
     private Double total;
 
     
-    private Date date;
+    private String dateDay;
 
     private Integer storeId;
 

@@ -9,11 +9,11 @@ public class PlateVo {
 
     private Double price;
 
-    private Object picture;
-
     private Integer usedCount;
 
     private String remark;
+
+    private Object picture;
 
 
 }

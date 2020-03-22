@@ -9,10 +9,10 @@ public class FoodManageVo {
 
     private String foodName;
 
-    private float foodPrice;
-
-    private String platePhoto;
+    private Double foodPrice;
 
     private String remark;
+
+    private String platePhoto;
 
 }

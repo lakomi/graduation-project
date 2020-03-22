@@ -1,7 +1,9 @@
 package com.edu.graduation.service.impl;
 
 import com.edu.graduation.dao.BusinessUserMapper;
+import com.edu.graduation.dao.StoreMapper;
 import com.edu.graduation.entity.bean.BusinessUser;
+import com.edu.graduation.entity.bean.Store;
 import com.edu.graduation.entity.dto.LoginDTO;
 import com.edu.graduation.enums.MyExceptionEnum;
 import com.edu.graduation.exception.MyException;
@@ -34,6 +36,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private BusinessUserMapper businessUserMapper;
     @Autowired
+    private StoreMapper storeMapper;
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Autowired
@@ -55,12 +59,13 @@ public class UserServiceImpl implements UserService {
         Authentication authentication = jwtLoginFilter.attemptAuthentication(loginDTO);
         //验证用户名和密码
         Authentication resultAuthentication = userAuthenticationProvider.authenticate(authentication);
+        Store store = storeMapper.getOneByUserId(loginDTO.getUserId());
         BusinessUser user = businessUserMapper.getUserById(loginDTO.getUserId());
         if (!user.getUserRole().contains(ADMIN_ROLE)) {
             throw new MyException(MyExceptionEnum.USERID_NOT_EXIT);
         }
         //验证通过，生成token，放入response
-        ResultVo resultVo = jwtLoginFilter.successfulAuthentication(resultAuthentication, response, user.getUserId());
+        ResultVo resultVo = jwtLoginFilter.successfulAuthentication(resultAuthentication, response, store.getStoreId().toString());
         return resultVo;
     }
 

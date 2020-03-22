@@ -8,6 +8,7 @@ public interface FoodService {
 
     /**
      * 获取菜品列表
+     *
      * @param storeId
      * @return
      */
@@ -15,6 +16,7 @@ public interface FoodService {
 
     /**
      * 修改菜品信息
+     *
      * @param modifyFoodDTO
      * @return
      */
@@ -22,6 +24,7 @@ public interface FoodService {
 
     /**
      * 添加菜品信息
+     *
      * @param addFoodDTO
      * @return
      */
@@ -29,6 +32,7 @@ public interface FoodService {
 
     /**
      * 删除菜皮
+     *
      * @param foodId
      * @return
      */

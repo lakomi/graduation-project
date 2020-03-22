@@ -23,8 +23,14 @@ public interface FoodMapper {
      * @param storeId
      * @return
      */
-    List<Food> getAllFoodFromOne(@Param("storeId")Integer storeId);
+    List<Food> getAllFoodFromOne(@Param("storeId")Integer storeId,@Param("status")Integer status);
 
+    /**
+     * 多表联查
+     * @param storeId
+     * @param status
+     * @return
+     */
     List<FoodManageVo> getAllFood(@Param("storeId")Integer storeId,@Param("status")Integer status);
 
     Food getOneById(@Param("foodId")String foodId);
@@ -49,6 +55,14 @@ public interface FoodMapper {
      * @return
      */
     int deleteFood(@Param("foodId")String foodId, @Param("status")Integer status);
+
+    /**
+     * 修改某个盘子对应的价格（此操作在盘子信息被修改后执行）
+     * @param plateId
+     * @param price
+     * @return
+     */
+    int modifyFoodPrice(@Param("plateId")String plateId,@Param("price")Double price);
 
 
 }

@@ -1,23 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/PlateController.java" line="46" mnemonic="2" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="312468dc-82e2-4bc0-a774-41ef7fe128af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/PlateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/PlateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/PlateVo.java" afterDir="false" />
+    <list default="true" id="312468dc-82e2-4bc0-a774-41ef7fe128af" name="Default Changelist" comment="2020.3.22-1">
+      <change afterPath="$PROJECT_DIR$/.idea/GrepConsole.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StatisticController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/AddPlateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifyPlateDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/SellTotalDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StatisticServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cbd13d4-6ddf-47fb-9c0e-573f831b71cd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7cbd13d4-6ddf-47fb-9c0e-573f831b71cd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/BaiduImageSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/BaiduImageSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/aspect/ControllerLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/aspect/ControllerLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/ImageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/PlateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/PlateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/BusinessUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/BusinessUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StoreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/FoodMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/FoodMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/PlateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/PlateMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Orderdetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Orderdetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Plate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Plate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Sell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Sell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/PlateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/PlateMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/PlateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/PlateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/PlateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/PlateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/AuthenticationUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/MD5Util.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodManageVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodManageVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/PlateVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/PlateVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/FoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/FoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/PlateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/PlateMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/SellMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/SellMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,6 +85,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="payApp: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cyg@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="payApp: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="sell: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -64,12 +99,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/PlateController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StatisticServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="162">
+              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,20 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/PlateService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/PlateServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/StatisticService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,35 +149,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/SignInExceptionEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/exception/SignInException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/handler/SignInExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/AuthenticationUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/filter/UserAuthenticationProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/MyUserDetailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/po/AllFoodpo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/aspect/ControllerLogger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifyFoodDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/BusinessManageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/BusinessManageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/BusinessController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/MD5Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/KeyUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/AddFoodDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/PlateMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/OrderMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Store.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Sell.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Plate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Orderdetail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Order.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/Swagger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/filter/JWTAuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/MyExceptionEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StoreServiceImpl.java" />
@@ -159,21 +162,44 @@
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/StoreMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifySelfDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/StoreMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StoreController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodManageVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/FoodMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/BusinessUserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/BaiduImageSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/ShibieExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/config/MyWebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/ImageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/ImageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Plate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/PlateVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/aspect/ControllerLogger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodManageVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/PlateMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/PlateMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifyPlateDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/FoodMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/ImageServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/PlateService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/PlateController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/PlateVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/PlateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/AddPlateDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/SellTotalDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Sell.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StatisticController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Orderdetail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StatisticServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/StatisticService.java" />
       </list>
     </option>
   </component>
@@ -236,37 +262,7 @@
               <item name="graduation" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graduation" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graduation" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graduation" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="graduation" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,7 +285,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="E:/front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SignIn-system" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -298,7 +294,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -322,6 +318,20 @@
       <recent name="E:\ideaProdects\graduation\src\main\java\com\edu\graduation\AI\util" />
     </key>
   </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 19 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 19 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="graduation" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -335,6 +345,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.GraduationApplication">
+    <configuration name="ShibieExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.edu.graduation.utils.ShibieExample" />
+      <module name="graduation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.graduation.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BusinessUserMapperTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="graduation" />
       <extension name="coverage">
@@ -360,6 +383,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShibieExample" />
         <item itemvalue="JUnit.BusinessUserMapperTest.select" />
       </list>
     </recent_temporary>
@@ -392,7 +416,22 @@
       <workItem from="1583745499986" duration="1019000" />
       <workItem from="1584008553592" duration="3553000" />
       <workItem from="1584063810288" duration="95000" />
-      <workItem from="1584067099918" duration="17048000" />
+      <workItem from="1584067099918" duration="17151000" />
+      <workItem from="1584240770978" duration="6701000" />
+      <workItem from="1584336612796" duration="2298000" />
+      <workItem from="1584513009220" duration="366000" />
+      <workItem from="1584513409219" duration="230000" />
+      <workItem from="1584513676320" duration="515000" />
+      <workItem from="1584514229337" duration="445000" />
+      <workItem from="1584514713940" duration="67000" />
+      <workItem from="1584515524408" duration="47000" />
+      <workItem from="1584515610537" duration="315000" />
+      <workItem from="1584515993479" duration="342000" />
+      <workItem from="1584758026828" duration="7405000" />
+      <workItem from="1584765890173" duration="6404000" />
+      <workItem from="1584843729552" duration="233000" />
+      <workItem from="1584844170521" duration="3435000" />
+      <workItem from="1584852263868" duration="12001000" />
     </task>
     <task id="LOCAL-00001" summary="2020.3.4-1">
       <created>1583306364515</created>
@@ -429,7 +468,28 @@
       <option name="project" value="LOCAL" />
       <updated>1584098356459</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2020.3.13-3">
+      <created>1584099870066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584099870067</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2020.3.22-1">
+      <created>1584879205104</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584879205105</updated>
+    </task>
+    <task id="LOCAL-00008" summary="2020.3.22-1">
+      <created>1584879236532</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584879236532</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -465,13 +525,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82692000" />
+    <option name="totallyTimeSpent" value="123609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603072" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26434922" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -479,9 +538,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" weight="0.27175844" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3179396" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26820603" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.18439716" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,12 +549,13 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.6536412" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32820514" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.5186501" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.14358975" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.3298731" />
+      <window_info anchor="bottom" id="Tail" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -505,6 +566,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="RestServices" order="10" weight="0.32902184" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,392 +576,53 @@
     <MESSAGE value="2020.3.4-1" />
     <MESSAGE value="2020.3.13-1" />
     <MESSAGE value="2020.3.13-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.3.13-2" />
+    <MESSAGE value="2020.3.13-3" />
+    <MESSAGE value="2020.3.22-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.3.22-1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/BusinessUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/util/Base64Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Sell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Orderdetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/ResultVoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/Swagger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.30/tomcat-embed-core-9.0.30.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.30/tomcat-embed-core-9.0.30.jar!/javax/servlet/http/HttpServletResponse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/filter/JWTAuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/crypto/password/PasswordEncoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/BusinessUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/MyExceptionEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/LoginDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/TokenDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="25">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/handler/MyExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/Same.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        <state relative-caret-position="250">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/aspect/ControllerLogger.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-875">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="24746">
+          <caret line="1075" column="6" lean-forward="true" selection-start-line="1075" selection-start-column="6" selection-end-line="1075" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/StoreMapper.xml">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar!/lombok/extern/slf4j/Slf4j.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="54" column="51" lean-forward="true" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Store.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifyFoodDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/AddFoodDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#modifyFood#0;class#FoodController#0" />
-            <element signature="method#addFood#0;class#FoodController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/ImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="42" column="99" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#modifyPassword#0;class#StoreController#0" />
-            <element signature="method#modifyDataSelf#0;class#StoreController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="63" column="115" selection-start-line="63" selection-start-column="115" selection-end-line="63" selection-end-column="115" />
-          <folding>
-            <element signature="method#AdminLogin#0;class#UserController#0" />
-            <element signature="method#UserLogin#0;class#UserController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/BusinessUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="31" column="66" lean-forward="true" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/FoodMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/OrderdetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/PlateMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifySelfDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/StoreMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/WechatuserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="46" column="75" selection-start-line="46" selection-start-column="68" selection-end-line="46" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/MyUserDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StoreServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding>
-            <element signature="method#getStoreData#0;class#StoreServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/StoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodManageVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="176">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/ResultVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
+        <state relative-caret-position="-196">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/PlateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/StoreMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Plate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/ImageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/PlateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -908,15 +631,361 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/PlateVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="360">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodManageVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifyFoodDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifyPlateDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="method#addFood#0;class#FoodController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/FoodMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#modifyFood#0;class#FoodServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/ImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="31" column="57" lean-forward="true" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="method#upLoadImageSimilar#0;class#ImageController#0" />
+            <element signature="method#searchImageSimilar#0;class#ImageController#0" />
+            <element signature="method#upLoadImageSame#0;class#ImageController#0" />
+            <element signature="method#searchImageSame#0;class#ImageController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/PlateMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="104" lean-forward="true" selection-start-line="7" selection-start-column="104" selection-end-line="7" selection-end-column="104" />
+          <folding>
+            <element signature="n#select#1;n#mapper#0;n#!!top" />
+            <element signature="n#select#2;n#mapper#0;n#!!top" />
+            <element signature="n#select#3;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/AddFoodDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/ImageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/PlateMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/BaiduImageSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/PlateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/AuthenticationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1376">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/ImageToBase64Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/KeyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/ResultVoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/PlateServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getAllPlates#0;class#PlateServiceImpl#0" />
+            <element signature="method#deletePlate#0;class#PlateServiceImpl#0" />
+            <element signature="method#modifyPlate#0;class#PlateServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/AddPlateDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifySelfDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Wechatuser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/aspect/ControllerLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/PlateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/BusinessUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Orderdetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Plate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Sell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/SellTotalDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StatisticController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="29" column="54" lean-forward="true" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StatisticServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/ShibieExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/edu/graduation/service/StatisticService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -929,6 +998,17 @@
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

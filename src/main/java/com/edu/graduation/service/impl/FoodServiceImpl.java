@@ -20,7 +20,9 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -44,7 +46,22 @@ public class FoodServiceImpl implements FoodService {
 
     @Override
     public ResultVo getAllFoodList(Integer storeId) {
-        List<FoodManageVo> foodManageVoList = foodMapper.getAllFood(storeId,FOOD_STATUS_ON);
+//        List<FoodManageVo> foodManageVoList = foodMapper.getAllFood(storeId,FOOD_STATUS_ON);
+
+        List<Food> foodList = foodMapper.getAllFoodFromOne(storeId,FOOD_STATUS_ON);
+        List<FoodManageVo> foodManageVoList = new ArrayList<>();
+        for (Food food:foodList) {
+            FoodManageVo foodManageVo = new FoodManageVo();
+            BeanUtils.copyProperties(food,foodManageVo);
+            Plate plate = plateMapper.getPlateById(food.getPlateId());
+//            log.info(plate.toString());
+            if (!StringUtils.isEmpty(plate)){
+                foodManageVo.setPlatePhoto(plate.getPicture());
+                foodManageVo.setRemark(plate.getRemark());
+            }
+            foodManageVoList.add(foodManageVo);
+        }
+
         return ResultVoUtil.success(foodManageVoList);
     }
 

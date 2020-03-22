@@ -31,7 +31,7 @@ public class FoodController {
 
 
     @ApiOperation(value = "获取某一家的所有菜品列表。返回信息有编号，名称，单价，盘子图片，备注")
-    @PostMapping("/getAllFood")
+    @GetMapping("/getAllFood")
     public ResultVo getAllFood(@RequestParam("storeId") Integer storeId){
         return foodService.getAllFoodList(storeId);
     }

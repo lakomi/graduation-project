@@ -12,9 +12,9 @@ import java.util.Map;
 
 public class BaiduImageSearch {
     //设置APPID/AK/SK
-    public static final String APP_ID = "18451559";
-    public static final String API_KEY = "Z6m4bIA4pSvUUUB33zfaPK4c";
-    public static final String SECRET_KEY = "UMNhsuWhG5k1xdmQMIy1YGhgAsMrO5dC";
+    public static final String APP_ID = "18453210";
+    public static final String API_KEY = "5A0HxWjitlE6quuUPtBWG7Xi";
+    public static final String SECRET_KEY = "lu5qi4akmvK4SGk10gO4nBsg30AcfiHP";
 
     public AipImageSearch getAipImageSearch() {
         // 初始化一个AipImageSearch

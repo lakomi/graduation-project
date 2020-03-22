@@ -13,7 +13,7 @@
         from
         food
         where
-        store_id=#{storeId}
+        store_id=#{storeId} and food_status=#{status}
     </select>
 
 <!--        List<FoodManageVo> getAllFood(@Param("storeId")Integer storeId,@Param("status")Integer status);-->
@@ -68,6 +68,10 @@
 <!--   ResultVo deleteFood(@Param("foodId") String foodId,@Param("status") Integer status);-->
     <update id="deleteFood">
         update food set food_status=#{status} where food_id=#{foodId}
+    </update>
+<!--        int modifyFoodPrice(@Param("plateId")String plateId,@Param("price")Double price);-->
+    <update id="modifyFoodPrice">
+        update food set food_price=#{price}  where plate_id=#{plateId};
     </update>
 
 

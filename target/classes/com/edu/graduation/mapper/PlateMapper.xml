@@ -2,8 +2,29 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.edu.graduation.dao.PlateMapper">
 
+<!--int insertPlate(@Param("plate")Plate plate);-->
+    <insert id="insertPlate" parameterType="com.edu.graduation.entity.bean.Plate">
+        insert into plate (plate_id, price, picture, used_count, remark, store_id)
+        values (#{plate.plateId},#{plate.price},#{plate.picture},#{plate.usedCount},#{plate.remark},#{plate.storeId});
+    </insert>
+<!--    int deletePlate(@Param("plateId")String plateId);-->
+    <delete id="deletePlate" parameterType="java.lang.String">
+        delete from plate where plate_id=#{plateId}
+    </delete>
 
-<!--    Plate getPlateById(@Param("plateId") String plateId);-->
+    <!--    List<Plate> getPlateListByStoreId(@Param("storeId")Integer storeId);-->
+    <select id="getPlateListByStoreId" resultType="com.edu.graduation.entity.bean.Plate">
+        select
+        plate_id plateId,
+        price,
+        picture,
+        used_count usedCount,
+        remark,
+        store_id storeId
+        from plate where store_id=#{storeId};
+    </select>
+
+    <!--    Plate getPlateById(@Param("plateId") String plateId);-->
     <select id="getPlateById" resultType="com.edu.graduation.entity.bean.Plate">
         select
         plate_id plateId,
@@ -17,17 +38,21 @@
         plate_id = #{plateId};
     </select>
 
-<!--    int modifyPlateUsedCount(@Param("plateId")String plateId,@Param("usedCount")Integer usedCount);-->
+    <!--    int modifyPlateUsedCount(@Param("plateId")String plateId,@Param("usedCount")Integer usedCount);-->
     <update id="modifyPlateUsedCount">
         update plate set  used_count=#{usedCount}  where plate_id=#{plateId};
     </update>
+<!--        int modifyPlate(@Param("plateId")String plateId,@Param("price")Double price,@Param("remark")String remark);-->
+    <update id="modifyPlate">
+        update plate set price=#{price},remark=#{remark}  where plate_id=#{plateId};
+    </update>
 
-<!--        int getUsedCountById(@Param("plateId")String plateId);-->
+    <!--        int getUsedCountById(@Param("plateId")String plateId);-->
     <select id="getUsedCountById" resultType="java.lang.Integer">
         select used_count from plate where plate_id=#{plateId};
     </select>
 
-<!--        Double getPriceById(@Param("plateId")String plateId);-->
+    <!--        Double getPriceById(@Param("plateId")String plateId);-->
     <select id="getPriceById" resultType="java.lang.Double">
         select price from plate where plate_id=#{plateId};
     </select>

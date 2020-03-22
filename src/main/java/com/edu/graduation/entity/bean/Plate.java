@@ -21,14 +21,14 @@ public class Plate {
     private String plateId;//4位
 
     private Double price;
-    
-    private Object picture;
 
     private Integer usedCount;
     
     private String remark;
 
     private Integer storeId;
+
+    private String picture;
 
     @Override
     public String toString() {

@@ -12,8 +12,8 @@ spring:
     port: 6379
     timeout: 500
     password: 741623
-
 mybatis:
   mapper-locations: classpath:com/edu/graduation/mapper/*.xml
   type-aliases-package: com.edu.graduation.entity.bean
+
 

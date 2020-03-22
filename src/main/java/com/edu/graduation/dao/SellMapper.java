@@ -1,8 +1,11 @@
 package com.edu.graduation.dao;
 
+import com.edu.graduation.entity.bean.Sell;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
 * (Sell)表Mapper类
@@ -21,5 +24,14 @@ public interface SellMapper {
      * @return
      */
     int deleteByFoodId(@Param("foodId")String foodId);
+
+    /**
+     * 按照storeId查找某范围内的销售信息
+     * @param storeId
+     * @param startDay
+     * @param endDay
+     * @return
+     */
+    List<Sell> findAllByStoreIdAndTime(@Param("storeId")Integer storeId, @Param("startDay")String startDay,@Param("endDay")String endDay);
 
 }

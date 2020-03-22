@@ -44,6 +44,30 @@ public interface PlateMapper{
      */
     Double getPriceById(@Param("plateId")String plateId);
 
+    /**
+     * 新增插入盘子
+     * @param plate
+     * @return
+     */
+    int insertPlate(@Param("plate")Plate plate);
+
+    /**
+     * 删除盘子
+     * @param plateId
+     * @return
+     */
+    int deletePlate(@Param("plateId")String plateId);
+
+    /**
+     * 修改盘子的单价/备注
+     * @param plateId
+     * @param price
+     * @param remark
+     * @return
+     */
+    int modifyPlate(@Param("plateId")String plateId,@Param("price")Double price,@Param("remark")String remark);
+
+
 
 
 

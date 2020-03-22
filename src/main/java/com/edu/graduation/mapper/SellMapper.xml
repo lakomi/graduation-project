@@ -2,10 +2,27 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.edu.graduation.dao.SellMapper">
 
-<!--    int deleteByFoodId(@Param("foodId")String foodId);-->
+    <!--    int deleteByFoodId(@Param("foodId")String foodId);-->
     <delete id="deleteByFoodId" parameterType="java.lang.String">
         delete from sell where food_id=#{foodId}
     </delete>
+    <!--        List<Sell> findAllByStoreIdAndTime(@Param("storeId")Integer storeId, @Param("startDay")String startDay,@Param("endDay")String endDay);-->
+    <select id="findAllByStoreIdAndTime" resultType="com.edu.graduation.entity.bean.Sell">
+        select
+        sell_id sellId,
+        food_id foodId,
+        sell_count sellCount,
+        price,
+        total,
+        date_day dateDay,
+        store_id storeId
+        from sell
+        where
+        store_id=#{storeId}
+        and
+        date_day between #{startDay} and #{endDay}
+        order by date_day;
+    </select>
 
 
 </mapper>

@@ -48,7 +48,11 @@ public class ControllerLogger {
      */
     @AfterReturning(pointcut = "controllerLog()",returning = "ret")
     public void afterReturing(Object ret){
-        System.out.println("[controller]————return "+ret);
+        if (ret.toString().contains("platePhoto") || ret.toString().contains("picture")){
+            System.out.println("[controller]————return (此处图片编码太长省略)");
+        }else {
+            System.out.println("[controller]————return " + ret);
+        }
     }
 
     /**

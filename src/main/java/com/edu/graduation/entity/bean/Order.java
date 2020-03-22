@@ -5,7 +5,6 @@ import lombok.Data;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Date;
 
 /**
  * (Order)表实体类
@@ -32,7 +31,7 @@ public class Order {
     private Double total;
 
     
-    private Date date;
+    private String dateDay;
 
     
     private Integer status;

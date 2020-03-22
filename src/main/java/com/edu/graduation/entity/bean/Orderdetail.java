@@ -5,7 +5,6 @@ import lombok.Data;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Date;
 
 /**
  * (Orderdetail)表实体类
@@ -41,7 +40,7 @@ public class Orderdetail {
     private Integer count;
 
     
-    private Date date;
+    private String dateDay;
 
     @Override
     public String toString() {
