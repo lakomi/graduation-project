@@ -23,6 +23,23 @@
         date_day between #{startDay} and #{endDay}
         order by date_day;
     </select>
+<!--    List<Sell> findFoodSellBystoreIdAndTime(@Param("storeId")Integer storeId,@Param("startDay")String startDay,@Param("endDay")String endDay);-->
+    <select id="findFoodSellBystoreIdAndTime" resultType="com.edu.graduation.entity.bean.Sell">
+        select
+        sell_id sellId,
+        food_id foodId,
+        sell_count sellCount,
+        price,
+        total,
+        date_day dateDay,
+        store_id storeId
+        from sell
+        where
+        store_id=#{storeId}
+        and
+        date_day between #{startDay} and #{endDay}
+        order by food_id;
+    </select>
 
 
 </mapper>

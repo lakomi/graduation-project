@@ -36,5 +36,16 @@ public class StatisticController {
         return statisticService.everyDaySellTotal(sellTotalDTO);
     }
 
+    @PostMapping("/getAllFoodEveryDayCount")
+    public ResultVo getAllFoodEveryDayCount(@Valid SellTotalDTO sellTotalDTO, BindingResult bindingResult){
+        if (bindingResult.hasErrors()) {
+            log.info("/addPlate @Valid 注解 验证错误");
+            System.out.println(bindingResult.getFieldError().getDefaultMessage());
+            return ResultVoUtil.error(CodeEnum.ERROR.getCode(), bindingResult.getFieldError().getDefaultMessage());
+        }
+        return statisticService.everyDayFoodSellCount(sellTotalDTO);
+
+    }
+
 
 }

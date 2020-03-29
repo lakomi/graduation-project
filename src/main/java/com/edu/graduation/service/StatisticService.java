@@ -11,6 +11,6 @@ public interface StatisticService {
      */
     ResultVo everyDaySellTotal(SellTotalDTO sellTotalDTO);
 
-    ResultVo everyDayFoodSellCount();
+    ResultVo everyDayFoodSellCount(SellTotalDTO sellTotalDTO);
 
 }

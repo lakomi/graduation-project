@@ -7,6 +7,7 @@ import com.edu.graduation.entity.bean.Store;
 import com.edu.graduation.entity.dto.ModifySelfDTO;
 import com.edu.graduation.enums.BackMessageEnum;
 import com.edu.graduation.enums.MyExceptionEnum;
+import com.edu.graduation.exception.MyException;
 import com.edu.graduation.service.StoreService;
 import com.edu.graduation.utils.ResultVoUtil;
 import com.edu.graduation.vo.ResultVo;
@@ -45,9 +46,9 @@ public class StoreServiceImpl implements StoreService {
             if(flag == 1)
                 return ResultVoUtil.success(BackMessageEnum.MODIFY_SUCCESS.getMessage());
             else
-                return ResultVoUtil.success(MyExceptionEnum.SQL_ERROR.getMessage());
+                throw new MyException(MyExceptionEnum.SQL_ERROR);
         }else{
-            return ResultVoUtil.success(MyExceptionEnum.OLD_PASSWORD_ERROR.getMessage());
+            throw new MyException(MyExceptionEnum.OLD_PASSWORD_ERROR);
         }
     }
 

@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -14,6 +15,13 @@ import java.util.Date;
  */
 @Slf4j
 public class DateUtil {
+
+    public static String date2string(Date day){
+        SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
+        return s.format(day);
+    }
+
+
     /**
      * 获得当前日期  年-月-日
      * 并返回String
@@ -147,6 +155,18 @@ public class DateUtil {
         }
         return ints;
     }
+
+    public static Date addDay(Date day){
+        SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar c = Calendar.getInstance();
+        c.setTime(day);
+        c.add(Calendar.DAY_OF_MONTH,1);
+        Date result = c.getTime();
+//        result = s.format(result);
+        return result;
+    }
+
+
 
 
 }
