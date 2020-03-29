@@ -9,6 +9,7 @@ import com.edu.graduation.entity.dto.AddFoodDTO;
 import com.edu.graduation.entity.dto.ModifyFoodDTO;
 import com.edu.graduation.enums.BackMessageEnum;
 import com.edu.graduation.enums.MyExceptionEnum;
+import com.edu.graduation.enums.StatusEnum;
 import com.edu.graduation.exception.MyException;
 import com.edu.graduation.service.FoodService;
 import com.edu.graduation.utils.KeyUtil;
@@ -40,28 +41,15 @@ public class FoodServiceImpl implements FoodService {
     @Autowired
     private SellMapper sellMapper;
 
-    private static Integer FOOD_STATUS_ON = 1;
-    private static Integer FOOD_STATUS_OFF = 0;
-
 
     @Override
     public ResultVo getAllFoodList(Integer storeId) {
-//        List<FoodManageVo> foodManageVoList = foodMapper.getAllFood(storeId,FOOD_STATUS_ON);
-
-        List<Food> foodList = foodMapper.getAllFoodFromOne(storeId,FOOD_STATUS_ON);
+        List<Food> foodList = foodMapper.getAllFoodFromOne(storeId, StatusEnum.FOOD_STATUS_ON.getCode());
         List<FoodManageVo> foodManageVoList = new ArrayList<>();
-        for (Food food:foodList) {
-            FoodManageVo foodManageVo = new FoodManageVo();
-            BeanUtils.copyProperties(food,foodManageVo);
-            Plate plate = plateMapper.getPlateById(food.getPlateId());
-//            log.info(plate.toString());
-            if (!StringUtils.isEmpty(plate)){
-                foodManageVo.setPlatePhoto(plate.getPicture());
-                foodManageVo.setRemark(plate.getRemark());
-            }
+        for (Food food : foodList) {
+            FoodManageVo foodManageVo = getFoodVo(food);
             foodManageVoList.add(foodManageVo);
         }
-
         return ResultVoUtil.success(foodManageVoList);
     }
 
@@ -73,21 +61,21 @@ public class FoodServiceImpl implements FoodService {
         String oldPlateId = food.getPlateId();
 
         Plate newPlate = plateMapper.getPlateById(modifyFoodDTO.getPlateId());
-        BeanUtils.copyProperties(modifyFoodDTO,food);
+        BeanUtils.copyProperties(modifyFoodDTO, food);
         food.setFoodPrice(newPlate.getPrice());
         ResultVo resultVo = new ResultVo();
 
         //修改菜品信息
-        if(foodMapper.updateFood(food) == 1)
+        if (foodMapper.updateFood(food) == 1)
             //当修改了盘子信息时，进行修改盘子被使用数量信息。旧盘子-1，新盘子+1
-            if (!oldPlateId.equals(modifyFoodDTO.getPlateId())){
+            if (!oldPlateId.equals(modifyFoodDTO.getPlateId())) {
                 Integer oldPlateCount = plateMapper.getUsedCountById(oldPlateId);
-                if((plateMapper.modifyPlateUsedCount(oldPlateId,oldPlateCount-1) == 1)&&
-                        (plateMapper.modifyPlateUsedCount(modifyFoodDTO.getPlateId(),newPlate.getUsedCount()+1))==1)
+                if ((plateMapper.modifyPlateUsedCount(oldPlateId, oldPlateCount - 1) == 1) &&
+                        (plateMapper.modifyPlateUsedCount(modifyFoodDTO.getPlateId(), newPlate.getUsedCount() + 1)) == 1)
                     return ResultVoUtil.success(BackMessageEnum.MODIFY_SUCCESS.getMessage());
                 else
                     throw new MyException(MyExceptionEnum.SQL_ERROR);
-            }else
+            } else
                 return ResultVoUtil.success(BackMessageEnum.MODIFY_SUCCESS.getMessage());
         else
             throw new MyException(MyExceptionEnum.SQL_ERROR);
@@ -97,19 +85,19 @@ public class FoodServiceImpl implements FoodService {
     @Transactional
     public ResultVo addFood(AddFoodDTO addFoodDTO) {
         Food food = new Food();
-        BeanUtils.copyProperties(addFoodDTO,food);
+        BeanUtils.copyProperties(addFoodDTO, food);
         Double price = plateMapper.getPriceById(addFoodDTO.getPlateId());
         food.setFoodPrice(price);
         food.setFoodId(KeyUtil.getRandomString(FOOD_ID_LENGTH));
-        food.setFoodStatus(FOOD_STATUS_ON);
+        food.setFoodStatus(StatusEnum.FOOD_STATUS_ON.getCode());
         //添加
         int one = foodMapper.addFood(food);
         //修改盘子的被引用数量
         Integer cout = plateMapper.getUsedCountById(addFoodDTO.getPlateId());
-        int two = plateMapper.modifyPlateUsedCount(addFoodDTO.getPlateId(),cout+1);
-        if ((one==1)&&(two==1)){
-                return ResultVoUtil.success(BackMessageEnum.ADD_SUCCESS.getMessage());
-        }else
+        int two = plateMapper.modifyPlateUsedCount(addFoodDTO.getPlateId(), cout + 1);
+        if ((one == 1) && (two == 1)) {
+            return ResultVoUtil.success(BackMessageEnum.ADD_SUCCESS.getMessage());
+        } else
             throw new MyException(MyExceptionEnum.SQL_ERROR);
     }
 
@@ -119,19 +107,36 @@ public class FoodServiceImpl implements FoodService {
         //修改盘子被引用数量,数量-1
         Food food = foodMapper.getOneById(foodId);
         Integer count = plateMapper.getUsedCountById(food.getPlateId());
-        int one = plateMapper.modifyPlateUsedCount(food.getPlateId(),count-1);
+        int one = plateMapper.modifyPlateUsedCount(food.getPlateId(), count - 1);
         //删除菜品,仅仅将其设为下架
-        int two = foodMapper.deleteFood(foodId,FOOD_STATUS_OFF);
+        int two = foodMapper.deleteFood(foodId, StatusEnum.FOOD_STATUS_OFF.getCode());
 
-        if((one==1)&&(two==1)) {
-                return ResultVoUtil.success(BackMessageEnum.DEL_SUCCESS.getMessage());
-        }else
+        if ((one == 1) && (two == 1)) {
+            return ResultVoUtil.success(BackMessageEnum.DEL_SUCCESS.getMessage());
+        } else
             throw new MyException(MyExceptionEnum.SQL_ERROR);
     }
 
+    @Override
+    public ResultVo getOneFood(String foodId) {
+        Food food = foodMapper.getOneById(foodId);
+        FoodManageVo foodManageVo = getFoodVo(food);
+        return ResultVoUtil.success(foodManageVo);
+    }
 
-
-
+    //整理成菜品vo的数据信息
+    private FoodManageVo getFoodVo(Food food) {
+        FoodManageVo foodManageVo = new FoodManageVo();
+        foodManageVo.setFoodId(food.getFoodId());
+        foodManageVo.setFoodName(food.getFoodName());
+        Plate plate = plateMapper.getPlateById(food.getPlateId());
+        if (!StringUtils.isEmpty(plate)) {
+            foodManageVo.setPlatePhoto(plate.getPicture());
+            foodManageVo.setRemark(plate.getRemark());
+            foodManageVo.setFoodPrice(plate.getPrice());
+        }
+        return foodManageVo;
+    }
 
 
 }

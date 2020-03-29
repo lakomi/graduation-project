@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="312468dc-82e2-4bc0-a774-41ef7fe128af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodEveryDaySellVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cbd13d4-6ddf-47fb-9c0e-573f831b71cd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7cbd13d4-6ddf-47fb-9c0e-573f831b71cd.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/StatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StatisticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StatisticController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graduation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/graduation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/StatisticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/StatisticService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StatisticServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StatisticServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StoreServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodEveryDaySellVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodEveryDaySellVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/graduation.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/FoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/FoodMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/SellMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/SellMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +89,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="a5477d4d-7998-472b-b831-a01f5f137edd" />
+  </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -111,7 +120,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -120,7 +129,10 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -254,7 +266,8 @@
       <workItem from="1585448645301" duration="102000" />
       <workItem from="1585448782214" duration="42000" />
       <workItem from="1585448851516" duration="40000" />
-      <workItem from="1585449768735" duration="314000" />
+      <workItem from="1585449768735" duration="1712000" />
+      <workItem from="1585452017458" duration="10235000" />
     </task>
     <task id="LOCAL-00001" summary="2020.3.4-1">
       <created>1583306364515</created>
@@ -319,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584879559412</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2020.3.29-1">
+      <created>1585450149848</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585450149848</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -358,49 +378,74 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/graduation-project" />
+    </ignored-roots>
     <MESSAGE value="2020.3.4-1" />
     <MESSAGE value="2020.3.13-1" />
     <MESSAGE value="2020.3.13-2" />
     <MESSAGE value="2020.3.13-3" />
     <MESSAGE value="2020.3.22-1" />
     <MESSAGE value="2020.3.22-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.3.22-2" />
+    <MESSAGE value="2020.3.29-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.3.29-1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="142" y="0" key="SettingsEditor" timestamp="1585450083910">
+    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1585467124866">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585450083910" />
+    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585467124866" />
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1585450148222">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585450148222" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1585450543193">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585450543193" />
+    <state width="1237" height="48" key="GridCell.Tab.0.bottom" timestamp="1585479926847">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="48" key="GridCell.Tab.0.bottom/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
+    <state width="1237" height="48" key="GridCell.Tab.0.center" timestamp="1585479926847">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="48" key="GridCell.Tab.0.center/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
+    <state width="1237" height="48" key="GridCell.Tab.0.left" timestamp="1585479926846">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="48" key="GridCell.Tab.0.left/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926846" />
+    <state width="1237" height="48" key="GridCell.Tab.0.right" timestamp="1585479926847">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="48" key="GridCell.Tab.0.right/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
+    <state width="1237" height="48" key="GridCell.Tab.1.bottom" timestamp="1585479926847">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="48" key="GridCell.Tab.1.bottom/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
+    <state width="1237" height="48" key="GridCell.Tab.1.center" timestamp="1585479926847">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="48" key="GridCell.Tab.1.center/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
+    <state width="1237" height="48" key="GridCell.Tab.1.left" timestamp="1585479926847">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="48" key="GridCell.Tab.1.left/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
+    <state width="1237" height="48" key="GridCell.Tab.1.right" timestamp="1585479926847">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="48" key="GridCell.Tab.1.right/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1585452047621">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585452047621" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1585450436953">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585450436953" />
     <state x="324" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1585449793942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="324" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585449793942" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

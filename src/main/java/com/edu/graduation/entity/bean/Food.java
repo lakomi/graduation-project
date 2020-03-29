@@ -33,7 +33,7 @@ public class Food {
     private String plateId;
 
 
-    private Integer foodStatus;//1为在架，2为下架
+    private Integer foodStatus;//1为在架，0为下架
 
    @Override
     public String toString() {

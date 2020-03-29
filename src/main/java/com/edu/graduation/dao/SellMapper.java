@@ -35,13 +35,13 @@ public interface SellMapper {
     List<Sell> findAllByStoreIdAndTime(@Param("storeId")Integer storeId, @Param("startDay")String startDay,@Param("endDay")String endDay);
 
     /**
-     * 查找某店铺中的菜品的销售信息
+     * 查找某店铺中的某菜品的销售信息
      * @param storeId
      * @param startDay
      * @param endDay
      * @return
      */
-    List<Sell> findFoodSellBystoreIdAndTime(@Param("storeId")Integer storeId,@Param("startDay")String startDay,@Param("endDay")String endDay);
+    List<Sell> findFoodSellBystoreIdAndTime(@Param("storeId")Integer storeId,@Param("foodId")String foodId,@Param("startDay")String startDay,@Param("endDay")String endDay);
 
 
 }

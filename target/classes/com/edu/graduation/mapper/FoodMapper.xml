@@ -9,7 +9,8 @@
         food_name foodName,
         food_price foodPrice,
         plate_id plateId,
-        store_id storeId
+        store_id storeId,
+        food_status foodStatus
         from
         food
         where

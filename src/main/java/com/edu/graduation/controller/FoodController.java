@@ -36,6 +36,11 @@ public class FoodController {
         return foodService.getAllFoodList(storeId);
     }
 
+    @GetMapping("/getOneFood")
+    public ResultVo getOneFood(@RequestParam("foodId")String foodId){
+        return foodService.getOneFood(foodId);
+    }
+
 
     @ApiOperation(value = "修改菜品的信息，可修改名称，盘子图片。单价和备注随盘子图片")
     @PostMapping("/modifyFood")

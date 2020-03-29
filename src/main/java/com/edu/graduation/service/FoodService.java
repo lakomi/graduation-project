@@ -38,4 +38,11 @@ public interface FoodService {
      */
     ResultVo deleteFood(String foodId);
 
+    /**
+     * 获取某一菜品具体信息
+     * @param foodId
+     * @return
+     */
+    ResultVo getOneFood(String foodId);
+
 }
