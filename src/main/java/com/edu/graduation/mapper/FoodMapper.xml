@@ -46,8 +46,7 @@
         food_id = #{foodId}
     </select>
 
-
-<!--    int addFood(@Param("food")Food food);-->
+    <!--    int addFood(@Param("food")Food food);-->
     <insert id="addFood" parameterType="com.edu.graduation.entity.bean.Food">
         insert into food (food_id, food_name, food_price, store_id, plate_id,food_status)
         values (#{food.foodId},#{food.foodName},#{food.foodPrice},#{food.storeId},#{food.plateId},#{food.foodStatus});
@@ -63,11 +62,11 @@
         store_id=#{food.storeId},
         plate_id=#{food.plateId}
         where
-        food_id=#{foodId};
+        food_id=#{food.foodId};
     </update>
 
 <!--   ResultVo deleteFood(@Param("foodId") String foodId,@Param("status") Integer status);-->
-    <update id="deleteFood">
+    <update id="modifyFoodStatus">
         update food set food_status=#{status} where food_id=#{foodId}
     </update>
 <!--        int modifyFoodPrice(@Param("plateId")String plateId,@Param("price")Double price);-->

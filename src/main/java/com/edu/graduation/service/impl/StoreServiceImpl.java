@@ -11,6 +11,7 @@ import com.edu.graduation.exception.MyException;
 import com.edu.graduation.service.StoreService;
 import com.edu.graduation.utils.ResultVoUtil;
 import com.edu.graduation.vo.ResultVo;
+import com.edu.graduation.vo.SelectStoreVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -59,6 +60,19 @@ public class StoreServiceImpl implements StoreService {
             return ResultVoUtil.success(BackMessageEnum.MODIFY_SUCCESS.getMessage());
         else
             return ResultVoUtil.success(MyExceptionEnum.SQL_ERROR.getMessage());
+    }
+
+    @Override
+    public ResultVo getAllStores() {
+        List<SelectStoreVo> selectStoreVoList = new ArrayList<>();
+        List<Store> storeList = storeMapper.getAllStores();
+        for (Store store:storeList) {
+            String temp = "门店："+store.getStoreName()+" 地址："+store.getStoreAddress();
+            SelectStoreVo selectStoreVo = new SelectStoreVo(store.getStoreId(),temp);
+            selectStoreVoList.add(selectStoreVo);
+
+        }
+        return ResultVoUtil.success(selectStoreVoList);
     }
 
 

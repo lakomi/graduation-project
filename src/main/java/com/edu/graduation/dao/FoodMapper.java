@@ -54,7 +54,7 @@ public interface FoodMapper {
      * @param foodId
      * @return
      */
-    int deleteFood(@Param("foodId")String foodId, @Param("status")Integer status);
+    int modifyFoodStatus(@Param("foodId")String foodId, @Param("status")Integer status);
 
     /**
      * 修改某个盘子对应的价格（此操作在盘子信息被修改后执行）
@@ -63,6 +63,4 @@ public interface FoodMapper {
      * @return
      */
     int modifyFoodPrice(@Param("plateId")String plateId,@Param("price")Double price);
-
-
 }

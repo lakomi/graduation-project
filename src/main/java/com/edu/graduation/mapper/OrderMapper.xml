@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.edu.graduation.dao.OrderMapper">
+    <insert id="insertOrder">
+        insert into
+        orderAll
+        (order_id,store_id,user_id,total,date_day,status)
+        values
+        (#{order.orderId},#{order.storeId},#{order.userId},#{order.total},#{order.dateDay},#{order.status});
+    </insert>
+    <update id="updateState">
+        update orderAll set status = #{status}  where order_id=#{orderId};
+    </update>
 
 
+    <delete id="deleteByFoodId"></delete>
+    <select id="getListByUserid" resultType="com.edu.graduation.entity.bean.Order">
+        select
+        order_id orderId,
+        store_id storeId,
+        user_id userId,
+        total,
+        date_day dateDay,
+        status
+        from orderAll
+        where user_id=#{userId}
+        order by store_id;
+    </select>
 </mapper>

@@ -5,7 +5,7 @@ import com.edu.graduation.dao.SellMapper;
 import com.edu.graduation.entity.bean.Food;
 import com.edu.graduation.entity.bean.Sell;
 import com.edu.graduation.entity.dto.SellTotalDTO;
-import com.edu.graduation.enums.StatusEnum;
+import com.edu.graduation.enums.MessageEnum;
 import com.edu.graduation.service.StatisticService;
 import com.edu.graduation.utils.DateUtil;
 import com.edu.graduation.utils.ResultVoUtil;
@@ -36,7 +36,7 @@ public class StatisticServiceImpl implements StatisticService {
     @Override
     public ResultVo everyDayFoodSellCount(SellTotalDTO sellTotalDTO) {
         //获取商家的菜品列表
-        List<Food> foods = foodMapper.getAllFoodFromOne(sellTotalDTO.getStoreId(), StatusEnum.FOOD_STATUS_ON.getCode());
+        List<Food> foods = foodMapper.getAllFoodFromOne(sellTotalDTO.getStoreId(), MessageEnum.FOOD_STATUS_ON.getCode());
         List<FoodEveryDaySellVo> foodEveryDaySellVoList = new ArrayList<>();
 
         //针对每一个菜品循环，查询其销售情况

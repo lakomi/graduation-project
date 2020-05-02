@@ -14,8 +14,20 @@
         store
         where user_id=#{userId}
     </select>
+    <select id="getAllStores" resultType="com.edu.graduation.entity.bean.Store">
+        select
+        store_id storeId,
+        store_name storeName,
+        store_address storeAddress,
+        user_id userId,
+        store_owner storeOwner
+        from store;
+    </select>
+    <select id="getStoreNameById" resultType="java.lang.String">
+        select store_name from store where store_id=#{storeId};
+    </select>
 
-<!--    int updateAllData(ModifySelfDTO modifySelfDTO);-->
+    <!--    int updateAllData(ModifySelfDTO modifySelfDTO);-->
     <update id="updateAllData" parameterType="com.edu.graduation.entity.dto.ModifySelfDTO">
         update store
         set

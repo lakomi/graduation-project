@@ -6,9 +6,7 @@ import com.edu.graduation.enums.CodeEnum;
 import com.edu.graduation.service.FoodService;
 import com.edu.graduation.utils.ResultVoUtil;
 import com.edu.graduation.vo.ResultVo;
-import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +14,7 @@ import javax.validation.Valid;
 
 /**
  * @ClassName AdminController
- * @Description TODO
+ * @Description
  * @Author q
  * @Date 18-7-21 下午7:31
  */
@@ -26,11 +24,14 @@ import javax.validation.Valid;
 @Slf4j
 public class FoodController {
 
-    @Autowired
-    private FoodService foodService;
+    private final FoodService foodService;
+
+    public FoodController(FoodService foodService) {
+        this.foodService = foodService;
+    }
 
 
-    @ApiOperation(value = "获取某一家的所有菜品列表。返回信息有编号，名称，单价，盘子图片，备注")
+
     @GetMapping("/getAllFood")
     public ResultVo getAllFood(@RequestParam("storeId") Integer storeId){
         return foodService.getAllFoodList(storeId);
@@ -41,8 +42,16 @@ public class FoodController {
         return foodService.getOneFood(foodId);
     }
 
+    @GetMapping("/getFoodOff")
+    public ResultVo getFoodOff(@RequestParam("storeId") Integer storeId){
+        return foodService.getFoodOff(storeId);
+    }
 
-    @ApiOperation(value = "修改菜品的信息，可修改名称，盘子图片。单价和备注随盘子图片")
+    @PostMapping("/food_on")
+    public ResultVo foodOn(@RequestParam("foodId")String foodId){
+        return foodService.foodOn(foodId);
+    }
+
     @PostMapping("/modifyFood")
     public ResultVo modifyFood(@Valid ModifyFoodDTO modifyFoodDTO,BindingResult bindingResult){
         if (bindingResult.hasErrors()) {
@@ -53,7 +62,6 @@ public class FoodController {
         return foodService.modifyFood(modifyFoodDTO);
     }
 
-    @ApiOperation(value = "添加菜")
     @PostMapping("/addFood")
     public ResultVo addFood(@Valid AddFoodDTO addFoodDTO, BindingResult bindingResult){
         if (bindingResult.hasErrors()) {
@@ -64,7 +72,6 @@ public class FoodController {
         return foodService.addFood(addFoodDTO);
     }
 
-    @ApiOperation(value = "删除菜品，设为下架")
     @PostMapping("/deleteFood")
     public ResultVo deleteFood(@RequestParam("foodId")String foodId){
         return foodService.deleteFood(foodId);

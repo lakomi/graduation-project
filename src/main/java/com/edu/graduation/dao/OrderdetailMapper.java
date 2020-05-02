@@ -1,6 +1,8 @@
 package com.edu.graduation.dao;
 
+import com.edu.graduation.entity.bean.OrderDetail;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -13,5 +15,11 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Mapper
 public interface OrderdetailMapper {
+    /**
+     * 向表中查插入一条记录
+     * @param orderDetail
+     * @return
+     */
+    int addOrderDetail(@Param("orderDetail") OrderDetail orderDetail);
 
 }

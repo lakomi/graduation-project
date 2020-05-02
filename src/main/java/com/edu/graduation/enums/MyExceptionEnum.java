@@ -33,7 +33,15 @@ public enum MyExceptionEnum {
     /**
      * 添加用户，判断是否存在
      */
-    USERID_HAS_EXIT(6, "该用户已存在"),;
+    USERID_HAS_EXIT(6, "该用户已存在"),
+
+    ADD_THIRD_ERROR(7,"上传出错，请重试"),
+
+    DELETE_THIRD_ERROR(8,"删除出错，请重试"),
+
+    SELECT_THIRD_ERROR(11,"识别失败，请重新上传图片"),
+
+    ;
 
 
 

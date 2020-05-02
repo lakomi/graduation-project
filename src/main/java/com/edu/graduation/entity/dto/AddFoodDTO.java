@@ -11,7 +11,6 @@ public class AddFoodDTO {
     @NotBlank(message = "菜品名称不能为空")
     private String foodName;
 
-    @NotBlank(message = "盘子编号不能为空")
     private String plateId;
 
     @NotNull(message = "商家编号不能为空")

@@ -8,13 +8,13 @@ import com.edu.graduation.entity.dto.ModifyPlateDTO;
 import com.edu.graduation.enums.BackMessageEnum;
 import com.edu.graduation.enums.MyExceptionEnum;
 import com.edu.graduation.exception.MyException;
+import com.edu.graduation.service.ImageService;
 import com.edu.graduation.service.PlateService;
 import com.edu.graduation.utils.KeyUtil;
 import com.edu.graduation.utils.ResultVoUtil;
 import com.edu.graduation.vo.PlateVo;
 import com.edu.graduation.vo.ResultVo;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,10 +30,15 @@ public class PlateServiceImpl implements PlateService {
     private static int INIT_USED_COUNT = 0;
 
 
-    @Autowired
-    private PlateMapper plateMapper;
-    @Autowired
-    private FoodMapper foodMapper;
+    private final PlateMapper plateMapper;
+    private final FoodMapper foodMapper;
+    private final ImageService imageService;
+
+    public PlateServiceImpl(PlateMapper plateMapper, FoodMapper foodMapper, ImageService imageService) {
+        this.plateMapper = plateMapper;
+        this.foodMapper = foodMapper;
+        this.imageService = imageService;
+    }
 
 
     @Override
@@ -51,10 +56,18 @@ public class PlateServiceImpl implements PlateService {
 
     @Override
     public ResultVo deletePlate(String plateId) {
+        Plate plate = plateMapper.getPlateById(plateId);
         //删除盘子，直接删除
         int flag = plateMapper.deletePlate(plateId);
+
         if (flag == 1) {
-            return ResultVoUtil.success(BackMessageEnum.DEL_SUCCESS.getMessage());
+            //本地数据库存储成功后，上传到百度的云图库
+            int res = imageService.deleteFromBaidu(plate);
+            if (res == 1){
+                return ResultVoUtil.success(BackMessageEnum.DEL_SUCCESS.getMessage());
+            }else{
+                throw new MyException(MyExceptionEnum.DELETE_THIRD_ERROR);
+            }
         } else {
             return ResultVoUtil.success(MyExceptionEnum.SQL_ERROR.getMessage());
         }
@@ -82,7 +95,13 @@ public class PlateServiceImpl implements PlateService {
 
         int flag = plateMapper.insertPlate(plate);
         if (flag == 1) {
-            return ResultVoUtil.success(BackMessageEnum.ADD_SUCCESS.getMessage());
+            //本地数据库存储成功后，上传到百度的云图库
+            int res = imageService.upload2Baidu(plate);
+            if (res == 1){
+                return ResultVoUtil.success(BackMessageEnum.ADD_SUCCESS.getMessage());
+            }else{
+                throw new MyException(MyExceptionEnum.ADD_THIRD_ERROR);
+            }
         } else {
             throw new MyException(MyExceptionEnum.SQL_ERROR);
         }

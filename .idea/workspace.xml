@@ -2,24 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="312468dc-82e2-4bc0-a774-41ef7fe128af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/StatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_45_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_45_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_45_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_45_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_45_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_45_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/CustomizePhotoUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/Brief.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/CustomizeResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/DistinguishResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/LocationList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/CreateOrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/DistinguishDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/MessageEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/OrderListVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/OrderVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/SelectStoreVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/graduation.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/graduation-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/graduation.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7cbd13d4-6ddf-47fb-9c0e-573f831b71cd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7cbd13d4-6ddf-47fb-9c0e-573f831b71cd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graduation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/graduation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/Same.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/AI/Same.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/Swagger.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/FoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/SellMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/StoreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/FoodMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/FoodMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/OrderdetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/OrderdetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/StoreMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/dao/StoreMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/Orderdetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/bean/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/AddFoodDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/AddFoodDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifyFoodDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/entity/dto/ModifyFoodDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/MyExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/MyExceptionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/enums/StatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/exception/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/exception/MyException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/FoodMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/SellMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/OrderdetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/OrderdetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/mapper/StoreMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/FoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/StoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/StoreService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/FoodServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/PlateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/PlateServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StatisticServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StatisticServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodEveryDaySellVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/vo/FoodEveryDaySellVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/graduation.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/StoreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/graduation/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/graduation/utils/ShibieExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/graduation/GraduationApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/edu/graduation/dao/BusinessUserMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/FoodMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/FoodMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/SellMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/SellMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/OrderdetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/OrderdetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/StoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/graduation/mapper/StoreMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +135,6 @@
         <item name="cyg@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="payApp: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="cyg@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="payApp: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="sell: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -132,7 +205,10 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -171,6 +247,19 @@
     </treeState>
   </component>
   <component name="RunManager" selected="Spring Boot.GraduationApplication">
+    <configuration name="CustomizePhotoUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.edu.graduation.AI.CustomizePhotoUtil" />
+      <module name="graduation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.graduation.AI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShibieExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.edu.graduation.utils.ShibieExample" />
       <module name="graduation" />
@@ -209,6 +298,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CustomizePhotoUtil" />
         <item itemvalue="Application.ShibieExample" />
         <item itemvalue="JUnit.BusinessUserMapperTest.select" />
       </list>
@@ -267,7 +357,37 @@
       <workItem from="1585448782214" duration="42000" />
       <workItem from="1585448851516" duration="40000" />
       <workItem from="1585449768735" duration="1712000" />
-      <workItem from="1585452017458" duration="10235000" />
+      <workItem from="1585452017458" duration="10329000" />
+      <workItem from="1585559578493" duration="834000" />
+      <workItem from="1585655023618" duration="15000" />
+      <workItem from="1585741071983" duration="61000" />
+      <workItem from="1585741173218" duration="1236000" />
+      <workItem from="1585744386167" duration="699000" />
+      <workItem from="1585881268082" duration="4412000" />
+      <workItem from="1585888363468" duration="5694000" />
+      <workItem from="1585902501357" duration="835000" />
+      <workItem from="1585996672997" duration="2183000" />
+      <workItem from="1586057798611" duration="16427000" />
+      <workItem from="1586314704200" duration="1153000" />
+      <workItem from="1586331876141" duration="12414000" />
+      <workItem from="1586428404306" duration="7999000" />
+      <workItem from="1586438135684" duration="954000" />
+      <workItem from="1586519309444" duration="1741000" />
+      <workItem from="1586521301673" duration="1217000" />
+      <workItem from="1586571192138" duration="391000" />
+      <workItem from="1586571877148" duration="12936000" />
+      <workItem from="1586654422481" duration="12874000" />
+      <workItem from="1586857185465" duration="6255000" />
+      <workItem from="1587027328876" duration="3763000" />
+      <workItem from="1587104092471" duration="6132000" />
+      <workItem from="1587209049280" duration="1874000" />
+      <workItem from="1587264114898" duration="6628000" />
+      <workItem from="1587383823538" duration="108000" />
+      <workItem from="1587436567003" duration="2605000" />
+      <workItem from="1587789445860" duration="4057000" />
+      <workItem from="1587871784239" duration="15601000" />
+      <workItem from="1587975303354" duration="2236000" />
+      <workItem from="1588385105202" duration="3819000" />
     </task>
     <task id="LOCAL-00001" summary="2020.3.4-1">
       <created>1583306364515</created>
@@ -339,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585450149848</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2020.3.29-2">
+      <created>1585485949199</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585485949199</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -377,6 +504,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/graduation-project" />
@@ -388,64 +528,102 @@
     <MESSAGE value="2020.3.22-1" />
     <MESSAGE value="2020.3.22-2" />
     <MESSAGE value="2020.3.29-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.3.29-1" />
+    <MESSAGE value="2020.3.29-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.3.29-2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1585467124866">
+    <state x="233" y="0" key="#Console" timestamp="1586429666147">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585467124866" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1585450148222">
+    <state x="233" y="0" key="#Console/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1586429666147" />
+    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1587900948754">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585450148222" />
+    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1587900948754" />
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1585485946928">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585485946928" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1585450543193">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585450543193" />
-    <state width="1237" height="48" key="GridCell.Tab.0.bottom" timestamp="1585479926847">
+    <state x="453" y="237" key="Github.CreateGistDialog" timestamp="1586865677606">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="48" key="GridCell.Tab.0.bottom/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
-    <state width="1237" height="48" key="GridCell.Tab.0.center" timestamp="1585479926847">
+    <state x="453" y="237" key="Github.CreateGistDialog/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1586865677606" />
+    <state width="1237" height="231" key="GridCell.Tab.0.bottom" timestamp="1588395306703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="48" key="GridCell.Tab.0.center/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
-    <state width="1237" height="48" key="GridCell.Tab.0.left" timestamp="1585479926846">
+    <state width="1237" height="344" key="GridCell.Tab.0.bottom/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387846" />
+    <state width="1237" height="231" key="GridCell.Tab.0.bottom/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588395306703" />
+    <state width="1237" height="231" key="GridCell.Tab.0.center" timestamp="1588395306703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="48" key="GridCell.Tab.0.left/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926846" />
-    <state width="1237" height="48" key="GridCell.Tab.0.right" timestamp="1585479926847">
+    <state width="1237" height="344" key="GridCell.Tab.0.center/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387846" />
+    <state width="1237" height="231" key="GridCell.Tab.0.center/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588395306703" />
+    <state width="1237" height="231" key="GridCell.Tab.0.left" timestamp="1588395306703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="48" key="GridCell.Tab.0.right/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
-    <state width="1237" height="48" key="GridCell.Tab.1.bottom" timestamp="1585479926847">
+    <state width="1237" height="344" key="GridCell.Tab.0.left/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387845" />
+    <state width="1237" height="231" key="GridCell.Tab.0.left/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588395306703" />
+    <state width="1237" height="231" key="GridCell.Tab.0.right" timestamp="1588395306703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="48" key="GridCell.Tab.1.bottom/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
-    <state width="1237" height="48" key="GridCell.Tab.1.center" timestamp="1585479926847">
+    <state width="1237" height="344" key="GridCell.Tab.0.right/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387846" />
+    <state width="1237" height="231" key="GridCell.Tab.0.right/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588395306703" />
+    <state width="1237" height="231" key="GridCell.Tab.1.bottom" timestamp="1588395306703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="48" key="GridCell.Tab.1.center/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
-    <state width="1237" height="48" key="GridCell.Tab.1.left" timestamp="1585479926847">
+    <state width="1237" height="344" key="GridCell.Tab.1.bottom/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387847" />
+    <state width="1237" height="231" key="GridCell.Tab.1.bottom/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588395306703" />
+    <state width="1237" height="231" key="GridCell.Tab.1.center" timestamp="1588395306703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="48" key="GridCell.Tab.1.left/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
-    <state width="1237" height="48" key="GridCell.Tab.1.right" timestamp="1585479926847">
+    <state width="1237" height="344" key="GridCell.Tab.1.center/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387846" />
+    <state width="1237" height="231" key="GridCell.Tab.1.center/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588395306703" />
+    <state width="1237" height="231" key="GridCell.Tab.1.left" timestamp="1588395306703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="48" key="GridCell.Tab.1.right/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585479926847" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1585452047621">
+    <state width="1237" height="344" key="GridCell.Tab.1.left/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387846" />
+    <state width="1237" height="231" key="GridCell.Tab.1.left/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588395306703" />
+    <state width="1237" height="231" key="GridCell.Tab.1.right" timestamp="1588395306703">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585452047621" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1585450436953">
+    <state width="1237" height="344" key="GridCell.Tab.1.right/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387846" />
+    <state width="1237" height="231" key="GridCell.Tab.1.right/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588395306703" />
+    <state width="1237" height="344" key="GridCell.Tab.2.bottom" timestamp="1586610387847">
+      <screen x="-1280" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="344" key="GridCell.Tab.2.bottom/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387847" />
+    <state width="1237" height="132" key="GridCell.Tab.2.bottom/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585887307137" />
+    <state width="1237" height="344" key="GridCell.Tab.2.center" timestamp="1586610387847">
+      <screen x="-1280" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="344" key="GridCell.Tab.2.center/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387847" />
+    <state width="1237" height="132" key="GridCell.Tab.2.center/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585887307137" />
+    <state width="1237" height="344" key="GridCell.Tab.2.left" timestamp="1586610387847">
+      <screen x="-1280" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="344" key="GridCell.Tab.2.left/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387847" />
+    <state width="1237" height="132" key="GridCell.Tab.2.left/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585887307136" />
+    <state width="1237" height="344" key="GridCell.Tab.2.right" timestamp="1586610387847">
+      <screen x="-1280" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="344" key="GridCell.Tab.2.right/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586610387847" />
+    <state width="1237" height="132" key="GridCell.Tab.2.right/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585887307137" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1586433288129">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585450436953" />
-    <state x="324" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1585449793942">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1586433288129" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1585485975593">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="324" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585449793942" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1585485975593" />
+    <state x="324" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1588385102663">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="-956" y="237" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1280.0.1280.984@-1280.0.1280.984" timestamp="1586654421041" />
+    <state x="324" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/-1280.0.1280.984@0.0.1280.680" timestamp="1588385102663" />
   </component>
 </project>

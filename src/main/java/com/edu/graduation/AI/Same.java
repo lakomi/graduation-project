@@ -9,16 +9,12 @@ import java.net.URLEncoder;
 
 public class Same {
 
-    public static String sameHqAdd(MultipartFile file) {
+    public static String sameHqAdd(String file) {
         // 请求url
         String url = "https://aip.baidubce.com/rest/2.0/realtime_search/same_hq/add";
         try {
-            // 本地文件路径
-//            String filePath = "[本地文件路径]";
-//            byte[] imgData = FileUtil.readFileByBytes(filePath);
-            byte[] imgData = ImageToBase64Util.imageToByte(file);
-            String imgStr = Base64Util.encode(imgData);
-            String imgParam = URLEncoder.encode(imgStr, "UTF-8");
+
+            String imgParam = URLEncoder.encode(file, "UTF-8");
 
             String param = "brief=" + "{\"name\":\"盘子\", \"id\":\"1\"}" + "&image=" + imgParam + "&tags=" + "1,1";
 

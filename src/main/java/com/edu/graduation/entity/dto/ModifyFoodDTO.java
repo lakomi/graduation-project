@@ -13,7 +13,6 @@ public class ModifyFoodDTO {
     @NotBlank(message = "菜品名称不能为空")
     private String foodName;
 
-    @NotBlank(message = "盘子编号不能为空")
     private String plateId;
 
 }

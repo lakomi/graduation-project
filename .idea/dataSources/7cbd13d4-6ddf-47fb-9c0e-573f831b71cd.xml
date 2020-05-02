@@ -943,7 +943,7 @@
     </collation>
     <table id="239" parent="9" name="business_user"/>
     <table id="240" parent="9" name="food"/>
-    <table id="241" parent="9" name="order"/>
+    <table id="241" parent="9" name="orderAll"/>
     <table id="242" parent="9" name="orderDetail"/>
     <table id="243" parent="9" name="plate"/>
     <table id="244" parent="9" name="sell"/>

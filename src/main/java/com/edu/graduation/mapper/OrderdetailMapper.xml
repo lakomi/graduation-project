@@ -3,5 +3,11 @@
 <mapper namespace="com.edu.graduation.dao.OrderdetailMapper">
 
 
-
+    <insert id="addOrderDetail">
+        insert
+        into orderDetail
+        (detail_id,store_id,order_id,food_id,user_id,price,count,date_day)
+        values
+        (#{orderDetail.detailId},#{orderDetail.storeId},#{orderDetail.orderId},#{orderDetail.foodId},#{orderDetail.userId},#{orderDetail.price},#{orderDetail.count},#{orderDetail.dateDay});
+    </insert>
 </mapper>

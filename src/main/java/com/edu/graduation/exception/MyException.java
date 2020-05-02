@@ -6,7 +6,7 @@ import lombok.Data;
 
 /**
  * @ClassName SignInException
- * @Description TODO
+ * @Description
  * @Author q
  * @Date 18-7-21 下午5:59
  */

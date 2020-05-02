@@ -25,5 +25,9 @@ public interface StoreService {
      */
     ResultVo modifyData(ModifySelfDTO modifySelfDTO);
 
-
+    /**
+     * 小程序  获取所有店铺信息
+     * @return
+     */
+    ResultVo getAllStores();
 }

@@ -36,6 +36,18 @@ public class Order {
     
     private Integer status;
 
+    public Order() {
+    }
+
+    public Order(String orderId, Integer storeId, String userId, Double total, String dateDay, Integer status) {
+        this.orderId = orderId;
+        this.storeId = storeId;
+        this.userId = userId;
+        this.total = total;
+        this.dateDay = dateDay;
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return JSON.toJSONString(this);

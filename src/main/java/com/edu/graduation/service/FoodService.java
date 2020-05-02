@@ -45,4 +45,17 @@ public interface FoodService {
      */
     ResultVo getOneFood(String foodId);
 
+    /**
+     * 获取下架菜品
+     * @param storeId
+     * @return
+     */
+    ResultVo getFoodOff(Integer storeId);
+
+    /**
+     * 将下架的商品，上架
+     * @param foodId
+     * @return
+     */
+    ResultVo foodOn(String foodId);
 }

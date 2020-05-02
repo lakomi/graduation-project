@@ -6,6 +6,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
 * (Store)表Mapper类
 *
@@ -30,4 +32,16 @@ public interface StoreMapper {
      */
     int updateAllData(@Param("modifySelfDTO") ModifySelfDTO modifySelfDTO);
 
+    /**
+     * 获取所有店铺
+     * @return
+     */
+    List<Store> getAllStores();
+
+    /**
+     * 获取店铺名称
+     * @param storeId
+     * @return
+     */
+    String getStoreNameById(@Param("storeId")Integer storeId);
 }

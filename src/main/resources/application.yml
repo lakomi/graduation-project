@@ -10,10 +10,12 @@ spring:
     database: 0
     host: 119.27.171.107
     port: 6379
-    timeout: 500
+    timeout: 5000
     password: 741623
 mybatis:
   mapper-locations: classpath:com/edu/graduation/mapper/*.xml
   type-aliases-package: com.edu.graduation.entity.bean
 
 
+# wx8e68ebe7c12836b4
+# 8b15e2b422b9453e52a89b9c4ff74280

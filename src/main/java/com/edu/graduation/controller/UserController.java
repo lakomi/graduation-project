@@ -6,7 +6,6 @@ import com.edu.graduation.enums.CodeEnum;
 import com.edu.graduation.service.UserService;
 import com.edu.graduation.utils.ResultVoUtil;
 import com.edu.graduation.vo.ResultVo;
-import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
@@ -19,7 +18,7 @@ import javax.validation.Valid;
 
 /**
  * @ClassName UserController
- * @Description TODO
+ * @Description
  * @Author q
  * @Date 18-7-21 下午6:28
  */
@@ -39,7 +38,6 @@ public class UserController {
      * @param response
      * @return
      */
-    @ApiOperation(value = "商家登录")
     @PostMapping("/loginA")
     public ResultVo AdminLogin(@Valid LoginDTO loginDTO, BindingResult bindingResult, HttpServletResponse response) {
 
@@ -59,7 +57,6 @@ public class UserController {
      * @param response
      * @return
      */
-    @ApiOperation(value = "目前暂定用户登录")
     @PostMapping("/loginU")
     public ResultVo UserLogin(@Valid LoginDTO loginDTO, BindingResult bindingResult, HttpServletResponse response) {
 
